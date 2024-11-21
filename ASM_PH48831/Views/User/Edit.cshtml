@@ -1,0 +1,59 @@
+﻿@model ASM_PH48831.Models.User
+
+@{
+    ViewData["Title"] = "Cập Nhật Thông Tin";
+}
+
+<div class="card shadow-lg p-4 mb-5">
+    <h2 class="mb-4 text-center text-black">Cập Nhật Thông Tin</h2>
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="NguoiDungId" />
+        <div class="form-group mb-3">
+            <label asp-for="TenNguoiDung" class="form-label text-dark"></label>
+            <input asp-for="TenNguoiDung" class="form-control" placeholder="Nhập tên người dùng" />
+            <span asp-validation-for="TenNguoiDung" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="NgaySinh" class="form-label text-dark"></label>
+            <input asp-for="NgaySinh" class="form-control" type="date" />
+            <span asp-validation-for="NgaySinh" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="DiaChi" class="form-label text-dark"></label>
+            <input asp-for="DiaChi" class="form-control" placeholder="Nhập địa chỉ" />
+            <span asp-validation-for="DiaChi" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Email" class="form-label text-dark"></label>
+            <input asp-for="Email" class="form-control" placeholder="Nhập email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="MatKhau" class="form-label text-dark">Mật Khẩu</label>
+            <input type="password" class="form-control" id="MatKhau" name="MatKhau" value="@Model.MatKhau" placeholder="Nhập mật khẩu" />
+            <span asp-validation-for="MatKhau" class="text-danger"></span>
+            <!-- Nút hiển thị mật khẩu -->
+            <button type="button" class="btn btn-info mt-2" onclick="togglePassword()">Hiển thị mật khẩu</button>
+        </div>
+        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+    </form>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.2/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById("MatKhau");
+        var currentType = passwordField.type;
+        if (currentType === "password") {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+        }
+    }
+</script>

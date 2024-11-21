@@ -1,0 +1,62 @@
+﻿@model ASM_PH48831.Models.User
+
+@{
+    ViewData["Title"] = "Đăng Ký";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">@ViewData["Title"]</h2>
+    <hr class="mb-4">
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="DangKy" method="post" class="shadow p-4 rounded bg-light">
+                @Html.AntiForgeryToken()
+
+                <div class="form-group mb-3">
+                    <label asp-for="TenNguoiDung" class="form-label text-black fw-bold"></label>
+                    <input asp-for="TenNguoiDung" class="form-control" placeholder="Nhập tên người dùng" />
+                    <span asp-validation-for="TenNguoiDung" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="NgaySinh" class="form-label text-black fw-bold"></label>
+                    <input asp-for="NgaySinh" class="form-control" type="date" />
+                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="DiaChi" class="form-label text-black fw-bold"></label>
+                    <input asp-for="DiaChi" class="form-control" placeholder="Nhập địa chỉ" />
+                    <span asp-validation-for="DiaChi" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="TaiKhoan" class="form-label text-black fw-bold">Tài khoản</label>
+                    <input asp-for="TaiKhoan" class="form-control" placeholder="Nhập tài khoản" />
+                    <span asp-validation-for="TaiKhoan" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="MatKhau" class="form-label text-black fw-bold">Mật khẩu</label>
+                    <input asp-for="MatKhau" class="form-control" type="password" placeholder="Nhập mật khẩu" />
+                    <span asp-validation-for="MatKhau" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Email" class="form-label text-black fw-bold"></label>
+                    <input asp-for="Email" class="form-control" placeholder="Nhập email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

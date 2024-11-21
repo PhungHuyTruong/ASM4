@@ -1,0 +1,329 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ASM_PH48831.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ASM_PH48831.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\10-47-58-930_512.webp",
+      "PackagePath": "staticwebassets\\Images\\10-47-58-930_512.webp"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\Screenshot 2023-08-03 142507.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2023-08-03 142507.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\Screenshot 2024-05-15 192922.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2024-05-15 192922.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\Screenshot 2024-05-15 193824.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2024-05-15 193824.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\Screenshot 2024-05-15 195228.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2024-05-15 195228.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\Screenshot 2024-05-15 195922.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2024-05-15 195922.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\hon-100-anh-ve-banh-beo-cuc-dep-hinh-anh-sac-net-den-tung-chi-tiet-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\hon-100-anh-ve-banh-beo-cuc-dep-hinh-anh-sac-net-den-tung-chi-tiet-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\hosting-fpt-removebg-preview.png",
+      "PackagePath": "staticwebassets\\Images\\hosting-fpt-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\img-1000x600-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img-1000x600-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\istockphoto-1200064755-170667a-removebg-preview.png",
+      "PackagePath": "staticwebassets\\Images\\istockphoto-1200064755-170667a-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\istockphoto-1200064755-170667a.jpg",
+      "PackagePath": "staticwebassets\\Images\\istockphoto-1200064755-170667a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\z6035875873720_114730cc66faa67749315b417c790719.jpg",
+      "PackagePath": "staticwebassets\\Images\\z6035875873720_114730cc66faa67749315b417c790719.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\z6035875881929_d785375a00c2dabf615d911288f4930a.jpg",
+      "PackagePath": "staticwebassets\\Images\\z6035875881929_d785375a00c2dabf615d911288f4930a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg",
+      "PackagePath": "staticwebassets\\Images\\z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\Images\\z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg",
+      "PackagePath": "staticwebassets\\Images\\z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\css\\TrangChu.css",
+      "PackagePath": "staticwebassets\\css\\TrangChu.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\ASM_PH48831\\ASM_PH48831\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASM_PH48831.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ASM_PH48831.props",
+      "PackagePath": "build\\ASM_PH48831.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ASM_PH48831.props",
+      "PackagePath": "buildMultiTargeting\\ASM_PH48831.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ASM_PH48831.props",
+      "PackagePath": "buildTransitive\\ASM_PH48831.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

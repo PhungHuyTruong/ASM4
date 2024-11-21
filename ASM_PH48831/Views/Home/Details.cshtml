@@ -1,0 +1,94 @@
+﻿@model ASM_PH48831.Models.MonAn
+<style>
+    .button-spacing {
+        margin-right: 20px;
+    }
+
+    .dynamic-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+        .dynamic-box img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+        }
+
+        .dynamic-box p {
+            word-wrap: break-word;
+        }
+
+    .product-details-container {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+    }
+
+    .product-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .product-price {
+        font-size: 1.5rem;
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .product-description {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .product-image {
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn-custom {
+        padding: 10px 30px;
+        font-size: 1.2rem;
+    }
+
+    .product-description, .product-details-container p {
+        color: #000000;
+    }
+</style>
+
+<div class="container py-5">
+    <h1 class="text-center mb-4">Chi tiết món ăn</h1>
+
+    <div class="product-details-container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <h3 class="product-title">@Model.TenMon</h3>
+                <hr class="my-3">
+                <p><strong>Giá:</strong> <span class="product-price">@Model.Gia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</span></p>
+                <p><strong>Loại món ăn:</strong> @Model.LoaiMonAn.TenLoaiMon</p>
+                <p><strong>Địa chỉ quán:</strong> @Model.DiaChiQuan.DiaChiChiTiet</p>
+                <p><strong>Thành phần:</strong> @Model.ThanhPhan.TenThanhPhan</p>
+                <p class="product-description"><strong>Mô tả:</strong> @Model.MoTa</p>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <img src="@Model.HinhAnh" alt="@Model.TenMon" class="img-fluid rounded shadow-sm product-image" />
+            </div>
+        </div>
+
+        <div class="button-container mt-4">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg btn-custom">Quay lại danh sách món ăn</a>
+            <a href="@Url.Action("AddToCart", "Cart", new { id = Model.MonAnId })" class="btn btn-success btn-lg btn-custom">Thêm vào giỏ hàng</a>
+        </div>
+    </div>
+</div>

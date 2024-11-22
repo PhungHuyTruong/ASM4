@@ -16,16 +16,26 @@ namespace ASM_PH48831.Models
         public DbSet<GioHangChiTiet> GioHangChiTiets { get; set; }
         public DbSet<HoaDon> HoaDons { get; set; }
         public DbSet<HoaDonChiTiet> HoaDonChiTiets { get; set; }
+        public DbSet<TrangThaiHoaDon> TrangThaiHoaDons { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<TrangThaiHoaDon>()
+                .HasKey(t => t.IdTrangThai);
 
             modelBuilder.Entity<HoaDon>()
                 .HasOne(h => h.User)
                 .WithMany(nd => nd.HoaDons)
                 .HasForeignKey(h => h.NguoiDungId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<HoaDon>()
+                .HasOne(h => h.TrangThaiHoaDon)
+                .WithMany()
+                .HasForeignKey(h => h.TrangThaiId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<ComboChiTiet>()
                 .HasOne(cct => cct.Combo)
@@ -84,6 +94,19 @@ namespace ASM_PH48831.Models
             modelBuilder.Entity<HoaDonChiTiet>()
                 .Property(hdct => hdct.DonGia)
                 .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<GioHang>()
+            .HasOne(gh => gh.User) // Mỗi GioHang có một User
+            .WithMany(u => u.GioHangs) // Mỗi User có thể có nhiều GioHang
+            .HasForeignKey(gh => gh.NguoiDungId) // Khóa ngoại là NguoiDungId
+            .OnDelete(DeleteBehavior.Cascade); // Xóa GioHang khi xóa User
+
+            // Cấu hình quan hệ giữa GioHang và GioHangChiTiet
+            modelBuilder.Entity<GioHang>()
+                .HasMany(gh => gh.GioHangChiTiets) // Mỗi GioHang có nhiều GioHangChiTiet
+                .WithOne(ghct => ghct.GioHang) // Mỗi GioHangChiTiet thuộc về một GioHang
+                .HasForeignKey(ghct => ghct.GioHangId) // Khóa ngoại là GioHangId
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<LoaiMonAn>().HasData(
             new LoaiMonAn { LoaiMonAnId = 1, TenLoaiMon = "Đồ chay" },
@@ -161,12 +184,20 @@ namespace ASM_PH48831.Models
             );
 
             modelBuilder.Entity<HoaDon>().HasData(
-                new HoaDon { HoaDonId = 1, NguoiDungId = 2, NgayLap = DateTime.Now, TongTien = 250000 }
+                new HoaDon { HoaDonId = 1, NguoiDungId = 2, NgayLap = DateTime.Now, TongTien = 250000, TrangThaiId = 1 }
             );
 
             modelBuilder.Entity<HoaDonChiTiet>().HasData(
                 new HoaDonChiTiet { HoaDonChiTietId = 1, HoaDonId = 1, MonAnId = 1, SoLuong = 1, DonGia = 200000 },
                 new HoaDonChiTiet { HoaDonChiTietId = 2, HoaDonId = 1, MonAnId = 2, SoLuong = 1, DonGia = 15000 }
+            );
+
+            modelBuilder.Entity<TrangThaiHoaDon>().HasData(
+                new TrangThaiHoaDon { IdTrangThai = 1, TenTrangThai = "Đang xử lý" },
+                new TrangThaiHoaDon { IdTrangThai = 2, TenTrangThai = "Đang giao" },
+                new TrangThaiHoaDon { IdTrangThai = 3, TenTrangThai = "Đã giao" },
+                new TrangThaiHoaDon { IdTrangThai = 4, TenTrangThai = "Đã thanh toán" },
+                new TrangThaiHoaDon { IdTrangThai = 5, TenTrangThai = "Đã hủy" }
             );
         }
     }

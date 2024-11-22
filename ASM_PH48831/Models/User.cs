@@ -38,5 +38,6 @@ namespace ASM_PH48831.Models
         public string VaiTro { get; set; } = "User";
 
         public ICollection<HoaDon> HoaDons { get; set; }
+        public ICollection<GioHang> GioHangs { get; set; }
     }
 }

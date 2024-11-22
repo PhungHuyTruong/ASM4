@@ -125,6 +125,7 @@ C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\ASM_PH4883
 C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\ASM_PH48831.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\ASM_PH48831.RazorAssemblyInfo.cache
 C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\ASM_PH48831.RazorAssemblyInfo.cs
+C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\ASM_PH48831.sourcelink.json
 C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Lenovo\source\repos\ASM_PH48831\ASM_PH48831\obj\Debug\net8.0\staticwebassets\msbuild.ASM_PH48831.Microsoft.AspNetCore.StaticWebAssets.props

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASM_PH48831.Migrations
 {
     [DbContext(typeof(ASMDbContext))]
-    [Migration("20241117123324_anh")]
-    partial class anh
+    [Migration("20241121090627_giohang")]
+    partial class giohang
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -169,12 +169,9 @@ namespace ASM_PH48831.Migrations
                     b.Property<int>("NguoiDungId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserNguoiDungId")
-                        .HasColumnType("int");
-
                     b.HasKey("GioHangId");
 
-                    b.HasIndex("UserNguoiDungId");
+                    b.HasIndex("NguoiDungId");
 
                     b.ToTable("GioHangs");
                 });
@@ -187,16 +184,21 @@ namespace ASM_PH48831.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GioHangChiTietId"));
 
+                    b.Property<int?>("ComboId")
+                        .HasColumnType("int");
+
                     b.Property<int>("GioHangId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MonAnId")
+                    b.Property<int?>("MonAnId")
                         .HasColumnType("int");
 
                     b.Property<int>("SoLuong")
                         .HasColumnType("int");
 
                     b.HasKey("GioHangChiTietId");
+
+                    b.HasIndex("ComboId");
 
                     b.HasIndex("GioHangId");
 
@@ -222,9 +224,14 @@ namespace ASM_PH48831.Migrations
                     b.Property<decimal>("TongTien")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("TrangThaiId")
+                        .HasColumnType("int");
+
                     b.HasKey("HoaDonId");
 
                     b.HasIndex("NguoiDungId");
+
+                    b.HasIndex("TrangThaiId");
 
                     b.ToTable("HoaDons");
 
@@ -232,9 +239,10 @@ namespace ASM_PH48831.Migrations
                         new
                         {
                             HoaDonId = 1,
-                            NgayLap = new DateTime(2024, 11, 17, 19, 33, 24, 39, DateTimeKind.Local).AddTicks(6590),
+                            NgayLap = new DateTime(2024, 11, 21, 16, 6, 27, 506, DateTimeKind.Local).AddTicks(8930),
                             NguoiDungId = 2,
-                            TongTien = 250000m
+                            TongTien = 250000m,
+                            TrangThaiId = 1
                         });
                 });
 
@@ -575,6 +583,50 @@ namespace ASM_PH48831.Migrations
                         });
                 });
 
+            modelBuilder.Entity("ASM_PH48831.Models.TrangThaiHoaDon", b =>
+                {
+                    b.Property<int>("IdTrangThai")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTrangThai"));
+
+                    b.Property<string>("TenTrangThai")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdTrangThai");
+
+                    b.ToTable("TrangThaiHoaDons");
+
+                    b.HasData(
+                        new
+                        {
+                            IdTrangThai = 1,
+                            TenTrangThai = "Đang xử lý"
+                        },
+                        new
+                        {
+                            IdTrangThai = 2,
+                            TenTrangThai = "Đang giao"
+                        },
+                        new
+                        {
+                            IdTrangThai = 3,
+                            TenTrangThai = "Đã giao"
+                        },
+                        new
+                        {
+                            IdTrangThai = 4,
+                            TenTrangThai = "Đã thanh toán"
+                        },
+                        new
+                        {
+                            IdTrangThai = 5,
+                            TenTrangThai = "Đã hủy"
+                        });
+                });
+
             modelBuilder.Entity("ASM_PH48831.Models.User", b =>
                 {
                     b.Property<int>("NguoiDungId")
@@ -665,8 +717,8 @@ namespace ASM_PH48831.Migrations
             modelBuilder.Entity("ASM_PH48831.Models.GioHang", b =>
                 {
                     b.HasOne("ASM_PH48831.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserNguoiDungId")
+                        .WithMany("GioHangs")
+                        .HasForeignKey("NguoiDungId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -675,6 +727,10 @@ namespace ASM_PH48831.Migrations
 
             modelBuilder.Entity("ASM_PH48831.Models.GioHangChiTiet", b =>
                 {
+                    b.HasOne("ASM_PH48831.Models.Combo", "Combo")
+                        .WithMany()
+                        .HasForeignKey("ComboId");
+
                     b.HasOne("ASM_PH48831.Models.GioHang", "GioHang")
                         .WithMany("GioHangChiTiets")
                         .HasForeignKey("GioHangId")
@@ -684,8 +740,9 @@ namespace ASM_PH48831.Migrations
                     b.HasOne("ASM_PH48831.Models.MonAn", "MonAn")
                         .WithMany("GioHangChiTiets")
                         .HasForeignKey("MonAnId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Combo");
 
                     b.Navigation("GioHang");
 
@@ -699,6 +756,14 @@ namespace ASM_PH48831.Migrations
                         .HasForeignKey("NguoiDungId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("ASM_PH48831.Models.TrangThaiHoaDon", "TrangThaiHoaDon")
+                        .WithMany()
+                        .HasForeignKey("TrangThaiId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("TrangThaiHoaDon");
 
                     b.Navigation("User");
                 });
@@ -801,6 +866,8 @@ namespace ASM_PH48831.Migrations
 
             modelBuilder.Entity("ASM_PH48831.Models.User", b =>
                 {
+                    b.Navigation("GioHangs");
+
                     b.Navigation("HoaDons");
                 });
 #pragma warning restore 612, 618

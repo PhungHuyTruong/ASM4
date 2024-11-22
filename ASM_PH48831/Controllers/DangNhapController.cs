@@ -20,19 +20,20 @@ namespace ASM_PH48831.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(LoginViewModel model)
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            var foundUser = _context.Users
-                    .FirstOrDefault(u => u.TaiKhoan == model.TaiKhoan && u.MatKhau == model.MatKhau);
+            var foundUser = await _context.Users
+                .FirstOrDefaultAsync(u => u.TaiKhoan == model.TaiKhoan && u.MatKhau == model.MatKhau);
 
             if (foundUser != null)
             {
                 HttpContext.Session.SetString("TaiKhoan", foundUser.TaiKhoan);
+                HttpContext.Session.SetString("NguoiDungId", foundUser.NguoiDungId.ToString());
                 HttpContext.Session.SetString("VaiTro", foundUser.VaiTro);
 
                 return RedirectToAction("Index", "Home");

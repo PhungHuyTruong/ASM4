@@ -46,7 +46,7 @@
                                     <p class="text-success">Giá: @item.Gia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</p>
                                     @if (ViewData["IsLoggedIn"] != null && (bool)ViewData["IsLoggedIn"])
                                     {
-                                        <button class="btn btn-danger w-100">Mua ngay</button>
+                                        <a href="@Url.Action("ThemVaoGioHang", "GioHang", new { monAnId = item.MonAnId, soLuong = 1 })" class="btn btn-danger">Mua ngay</a>
                                     }
                                     else
                                     {

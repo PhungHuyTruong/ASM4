@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ASM_PH48831.Migrations
 {
     /// <inheritdoc />
-    public partial class anh : Migration
+    public partial class giohang : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -80,6 +80,19 @@ namespace ASM_PH48831.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TrangThaiHoaDons",
+                columns: table => new
+                {
+                    IdTrangThai = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TenTrangThai = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TrangThaiHoaDons", x => x.IdTrangThai);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -147,15 +160,14 @@ namespace ASM_PH48831.Migrations
                 {
                     GioHangId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NguoiDungId = table.Column<int>(type: "int", nullable: false),
-                    UserNguoiDungId = table.Column<int>(type: "int", nullable: false)
+                    NguoiDungId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_GioHangs", x => x.GioHangId);
                     table.ForeignKey(
-                        name: "FK_GioHangs_Users_UserNguoiDungId",
-                        column: x => x.UserNguoiDungId,
+                        name: "FK_GioHangs_Users_NguoiDungId",
+                        column: x => x.NguoiDungId,
                         principalTable: "Users",
                         principalColumn: "NguoiDungId",
                         onDelete: ReferentialAction.Cascade);
@@ -169,11 +181,18 @@ namespace ASM_PH48831.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NguoiDungId = table.Column<int>(type: "int", nullable: false),
                     NgayLap = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    TongTien = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    TongTien = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    TrangThaiId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_HoaDons", x => x.HoaDonId);
+                    table.ForeignKey(
+                        name: "FK_HoaDons_TrangThaiHoaDons_TrangThaiId",
+                        column: x => x.TrangThaiId,
+                        principalTable: "TrangThaiHoaDons",
+                        principalColumn: "IdTrangThai",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_HoaDons_Users_NguoiDungId",
                         column: x => x.NguoiDungId,
@@ -216,12 +235,18 @@ namespace ASM_PH48831.Migrations
                     GioHangChiTietId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     GioHangId = table.Column<int>(type: "int", nullable: false),
-                    MonAnId = table.Column<int>(type: "int", nullable: false),
+                    MonAnId = table.Column<int>(type: "int", nullable: true),
+                    ComboId = table.Column<int>(type: "int", nullable: true),
                     SoLuong = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_GioHangChiTiets", x => x.GioHangChiTietId);
+                    table.ForeignKey(
+                        name: "FK_GioHangChiTiets_Combos_ComboId",
+                        column: x => x.ComboId,
+                        principalTable: "Combos",
+                        principalColumn: "ComboId");
                     table.ForeignKey(
                         name: "FK_GioHangChiTiets_GioHangs_GioHangId",
                         column: x => x.GioHangId,
@@ -314,6 +339,18 @@ namespace ASM_PH48831.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "TrangThaiHoaDons",
+                columns: new[] { "IdTrangThai", "TenTrangThai" },
+                values: new object[,]
+                {
+                    { 1, "Đang xử lý" },
+                    { 2, "Đang giao" },
+                    { 3, "Đã giao" },
+                    { 4, "Đã thanh toán" },
+                    { 5, "Đã hủy" }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "NguoiDungId", "DiaChi", "Email", "MatKhau", "NgaySinh", "TaiKhoan", "TenNguoiDung", "VaiTro" },
                 values: new object[,]
@@ -324,8 +361,8 @@ namespace ASM_PH48831.Migrations
 
             migrationBuilder.InsertData(
                 table: "HoaDons",
-                columns: new[] { "HoaDonId", "NgayLap", "NguoiDungId", "TongTien" },
-                values: new object[] { 1, new DateTime(2024, 11, 17, 19, 33, 24, 39, DateTimeKind.Local).AddTicks(6590), 2, 250000m });
+                columns: new[] { "HoaDonId", "NgayLap", "NguoiDungId", "TongTien", "TrangThaiId" },
+                values: new object[] { 1, new DateTime(2024, 11, 21, 16, 6, 27, 506, DateTimeKind.Local).AddTicks(8930), 2, 250000m, 1 });
 
             migrationBuilder.InsertData(
                 table: "MonAns",
@@ -378,6 +415,11 @@ namespace ASM_PH48831.Migrations
                 column: "MonAnId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_GioHangChiTiets_ComboId",
+                table: "GioHangChiTiets",
+                column: "ComboId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_GioHangChiTiets_GioHangId",
                 table: "GioHangChiTiets",
                 column: "GioHangId");
@@ -388,9 +430,9 @@ namespace ASM_PH48831.Migrations
                 column: "MonAnId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_GioHangs_UserNguoiDungId",
+                name: "IX_GioHangs_NguoiDungId",
                 table: "GioHangs",
-                column: "UserNguoiDungId");
+                column: "NguoiDungId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_HoaDonChiTiets_HoaDonId",
@@ -406,6 +448,11 @@ namespace ASM_PH48831.Migrations
                 name: "IX_HoaDons_NguoiDungId",
                 table: "HoaDons",
                 column: "NguoiDungId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_HoaDons_TrangThaiId",
+                table: "HoaDons",
+                column: "TrangThaiId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MonAns_DiachiquanId",
@@ -451,6 +498,9 @@ namespace ASM_PH48831.Migrations
 
             migrationBuilder.DropTable(
                 name: "MonAns");
+
+            migrationBuilder.DropTable(
+                name: "TrangThaiHoaDons");
 
             migrationBuilder.DropTable(
                 name: "Users");

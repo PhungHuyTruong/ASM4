@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASM_PH48831.Models
 {
@@ -16,6 +17,11 @@ namespace ASM_PH48831.Models
 
         [Required(ErrorMessage = "Tổng tiền là bắt buộc")]
         public decimal TongTien { get; set; }
+
+        [Required(ErrorMessage = "Trạng thái là bắt buộc")]
+        public int TrangThaiId { get; set; }
+        [ForeignKey("TrangThaiId")]
+        public TrangThaiHoaDon TrangThaiHoaDon { get; set; }
 
         public ICollection<HoaDonChiTiet> HoaDonChiTiets { get; set; }
     }

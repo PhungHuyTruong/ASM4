@@ -1,0 +1,47 @@
+﻿@model ASM_PH48831.Models.GioHang
+
+<h2>Giỏ Hàng</h2>
+
+@if (Model != null && Model.GioHangChiTiets != null && Model.GioHangChiTiets.Count > 0)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Tên Món</th>
+                <th>Số Lượng</th>
+                <th>Đơn Giá</th>
+                <th>Tổng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.GioHangChiTiets)
+            {
+                @if (item.MonAn != null)
+                {
+                    <tr>
+                        <td>@item.MonAn.TenMon</td>
+                        <td>@item.SoLuong</td>
+                        <td>@item.MonAn.Gia</td>
+                        <td>@(item.MonAn.Gia * item.SoLuong)</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4">Món ăn không tồn tại.</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <p><strong>Tổng Tiền Cần Thanh Toán: </strong>@ViewData["TongTien"]</p>
+        <a href="@Url.Action("ThanhToan")" class="btn btn-primary">Thanh Toán</a>
+        <a href="@Url.Action("HuyGioHang")" class="btn btn-danger">Hủy Giỏ Hàng</a>
+    </div>
+}
+else
+{
+    <p>Giỏ hàng của bạn đang trống.</p>
+}

@@ -11,12 +11,17 @@ namespace ASM_PH48831.Models
         public int GioHangId { get; set; }
         public GioHang GioHang { get; set; }
 
-        [Required(ErrorMessage = "Món ăn là bắt buộc")]
-        public int MonAnId { get; set; }
+        // Thêm một khóa ngoại để tham chiếu đến Món ăn
+        public int? MonAnId { get; set; }  // Nullable, vì có thể không phải món ăn
         public MonAn MonAn { get; set; }
+
+        // Thêm một khóa ngoại để tham chiếu đến Combo
+        public int? ComboId { get; set; }  // Nullable, vì có thể không phải combo
+        public Combo Combo { get; set; }
 
         [Required(ErrorMessage = "Số lượng là bắt buộc")]
         [Range(1, 100, ErrorMessage = "Số lượng phải nằm trong khoảng từ 1 đến 100")]
         public int SoLuong { get; set; }
     }
+
 }

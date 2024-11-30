@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASM_PH48831.Migrations
 {
     [DbContext(typeof(ASMDbContext))]
-    [Migration("20241121090627_giohang")]
-    partial class giohang
+    [Migration("20241125020210_5435345")]
+    partial class _5435345
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -239,7 +239,7 @@ namespace ASM_PH48831.Migrations
                         new
                         {
                             HoaDonId = 1,
-                            NgayLap = new DateTime(2024, 11, 21, 16, 6, 27, 506, DateTimeKind.Local).AddTicks(8930),
+                            NgayLap = new DateTime(2024, 11, 25, 9, 2, 10, 388, DateTimeKind.Local).AddTicks(5881),
                             NguoiDungId = 2,
                             TongTien = 250000m,
                             TrangThaiId = 1
@@ -419,7 +419,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 1,
                             DiachiquanId = 1,
                             Gia = 200000m,
-                            HinhAnh = "/Images/hosting-fpt-removebg-preview.png",
+                            HinhAnh = "/Images2/hosting-fpt-removebg-preview.png",
                             LoaiMonAnId = 3,
                             MoTa = "Pizza truyền thống",
                             TenMon = "Pizza",
@@ -430,7 +430,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 2,
                             DiachiquanId = 2,
                             Gia = 15000m,
-                            HinhAnh = "/Images/img-1000x600-1.jpg",
+                            HinhAnh = "/Images2/img-1000x600-1.jpg",
                             LoaiMonAnId = 1,
                             MoTa = "Bánh mì Việt Nam",
                             TenMon = "Bánh mì",
@@ -441,7 +441,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 3,
                             DiachiquanId = 3,
                             Gia = 60000m,
-                            HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg",
+                            HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg",
                             LoaiMonAnId = 2,
                             MoTa = "Món bún nổi tiếng",
                             TenMon = "Bún bò Huế",
@@ -452,7 +452,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 4,
                             DiachiquanId = 1,
                             Gia = 50000m,
-                            HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg",
+                            HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg",
                             LoaiMonAnId = 2,
                             MoTa = "Món phở truyền thống",
                             TenMon = "Phở",
@@ -463,7 +463,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 5,
                             DiachiquanId = 2,
                             Gia = 70000m,
-                            HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg",
+                            HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg",
                             LoaiMonAnId = 2,
                             MoTa = "Gà rán giòn tan",
                             TenMon = "Gà rán",
@@ -474,7 +474,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 6,
                             DiachiquanId = 3,
                             Gia = 30000m,
-                            HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg",
+                            HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg",
                             LoaiMonAnId = 1,
                             MoTa = "Bánh xèo giòn",
                             TenMon = "Bánh xèo",
@@ -485,7 +485,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 7,
                             DiachiquanId = 1,
                             Gia = 45000m,
-                            HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg",
+                            HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg",
                             LoaiMonAnId = 2,
                             MoTa = "Hủ tiếu Nam Vang",
                             TenMon = "Hủ tiếu",
@@ -496,7 +496,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 8,
                             DiachiquanId = 2,
                             Gia = 120000m,
-                            HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg",
+                            HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg",
                             LoaiMonAnId = 2,
                             MoTa = "Món sushi Nhật Bản",
                             TenMon = "Sushi",
@@ -507,7 +507,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 9,
                             DiachiquanId = 3,
                             Gia = 80000m,
-                            HinhAnh = "/Images/z6035875873720_114730cc66faa67749315b417c790719.jpg",
+                            HinhAnh = "/Images2/z6035875873720_114730cc66faa67749315b417c790719.jpg",
                             LoaiMonAnId = 3,
                             MoTa = "Mì Ý sốt cà chua",
                             TenMon = "Mì Ý",
@@ -518,7 +518,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 10,
                             DiachiquanId = 1,
                             Gia = 25000m,
-                            HinhAnh = "/Images/z6035875881929_d785375a00c2dabf615d911288f4930a.jpg",
+                            HinhAnh = "/Images2/z6035875881929_d785375a00c2dabf615d911288f4930a.jpg",
                             LoaiMonAnId = 1,
                             MoTa = "Trà sữa truyền thống",
                             TenMon = "Trà sữa",
@@ -529,7 +529,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 11,
                             DiachiquanId = 2,
                             Gia = 30000m,
-                            HinhAnh = "/Images/z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg",
+                            HinhAnh = "/Images2/z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg",
                             LoaiMonAnId = 1,
                             MoTa = "Salad rau củ tươi ngon",
                             TenMon = "Salad",
@@ -540,7 +540,7 @@ namespace ASM_PH48831.Migrations
                             MonAnId = 12,
                             DiachiquanId = 3,
                             Gia = 20000m,
-                            HinhAnh = "/Images/z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg",
+                            HinhAnh = "/Images2/z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg",
                             LoaiMonAnId = 1,
                             MoTa = "Chè đậu xanh",
                             TenMon = "Chè",

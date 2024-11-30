@@ -96,16 +96,15 @@ namespace ASM_PH48831.Models
                 .HasColumnType("decimal(18,2)");
 
             modelBuilder.Entity<GioHang>()
-            .HasOne(gh => gh.User) // Mỗi GioHang có một User
-            .WithMany(u => u.GioHangs) // Mỗi User có thể có nhiều GioHang
-            .HasForeignKey(gh => gh.NguoiDungId) // Khóa ngoại là NguoiDungId
-            .OnDelete(DeleteBehavior.Cascade); // Xóa GioHang khi xóa User
+            .HasOne(gh => gh.User)
+            .WithMany(u => u.GioHangs)
+            .HasForeignKey(gh => gh.NguoiDungId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-            // Cấu hình quan hệ giữa GioHang và GioHangChiTiet
             modelBuilder.Entity<GioHang>()
-                .HasMany(gh => gh.GioHangChiTiets) // Mỗi GioHang có nhiều GioHangChiTiet
-                .WithOne(ghct => ghct.GioHang) // Mỗi GioHangChiTiet thuộc về một GioHang
-                .HasForeignKey(ghct => ghct.GioHangId) // Khóa ngoại là GioHangId
+                .HasMany(gh => gh.GioHangChiTiets) 
+                .WithOne(ghct => ghct.GioHang) 
+                .HasForeignKey(ghct => ghct.GioHangId) 
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<LoaiMonAn>().HasData(
@@ -155,18 +154,18 @@ namespace ASM_PH48831.Models
             );
         
             modelBuilder.Entity<MonAn>().HasData(
-                new MonAn { MonAnId = 1, TenMon = "Pizza", Gia = 200000, MoTa = "Pizza truyền thống", HinhAnh = "/Images/hosting-fpt-removebg-preview.png", LoaiMonAnId = 3, ThanhPhanId = 1, DiachiquanId = 1 },
-                new MonAn { MonAnId = 2, TenMon = "Bánh mì", Gia = 15000, MoTa = "Bánh mì Việt Nam", HinhAnh = "/Images/img-1000x600-1.jpg", LoaiMonAnId = 1, ThanhPhanId = 1, DiachiquanId = 2},
-                new MonAn { MonAnId = 3, TenMon = "Bún bò Huế", Gia = 60000, MoTa = "Món bún nổi tiếng", HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 2, DiachiquanId = 3 },
-                new MonAn { MonAnId = 4, TenMon = "Phở", Gia = 50000, MoTa = "Món phở truyền thống", HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 3, DiachiquanId = 1 },
-                new MonAn { MonAnId = 5, TenMon = "Gà rán", Gia = 70000, MoTa = "Gà rán giòn tan", HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 2, DiachiquanId = 2 },
-                new MonAn { MonAnId = 6, TenMon = "Bánh xèo", Gia = 30000, MoTa = "Bánh xèo giòn", HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 1, ThanhPhanId = 1, DiachiquanId = 3 },
-                new MonAn { MonAnId = 7, TenMon = "Hủ tiếu", Gia = 45000, MoTa = "Hủ tiếu Nam Vang", HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 2, DiachiquanId = 1 },
-                new MonAn { MonAnId = 8, TenMon = "Sushi", Gia = 120000, MoTa = "Món sushi Nhật Bản", HinhAnh = "/Images/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 3, DiachiquanId = 2 },
-                new MonAn { MonAnId = 9, TenMon = "Mì Ý", Gia = 80000, MoTa = "Mì Ý sốt cà chua", HinhAnh = "/Images/z6035875873720_114730cc66faa67749315b417c790719.jpg", LoaiMonAnId = 3, ThanhPhanId = 1, DiachiquanId = 3 },
-                new MonAn { MonAnId = 10, TenMon = "Trà sữa", Gia = 25000, MoTa = "Trà sữa truyền thống", HinhAnh = "/Images/z6035875881929_d785375a00c2dabf615d911288f4930a.jpg", LoaiMonAnId = 1,  ThanhPhanId = 2, DiachiquanId = 1 },
-                new MonAn { MonAnId = 11, TenMon = "Salad", Gia = 30000, MoTa = "Salad rau củ tươi ngon", HinhAnh = "/Images/z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg", LoaiMonAnId = 1, ThanhPhanId = 3, DiachiquanId = 2 },
-                new MonAn { MonAnId = 12, TenMon = "Chè", Gia = 20000, MoTa = "Chè đậu xanh", HinhAnh = "/Images/z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg", LoaiMonAnId = 1, ThanhPhanId = 1, DiachiquanId = 3 }
+                new MonAn { MonAnId = 1, TenMon = "Pizza", Gia = 200000, MoTa = "Pizza truyền thống", HinhAnh = "/Images2/hosting-fpt-removebg-preview.png", LoaiMonAnId = 3, ThanhPhanId = 1, DiachiquanId = 1 },
+                new MonAn { MonAnId = 2, TenMon = "Bánh mì", Gia = 15000, MoTa = "Bánh mì Việt Nam", HinhAnh = "/Images2/img-1000x600-1.jpg", LoaiMonAnId = 1, ThanhPhanId = 1, DiachiquanId = 2},
+                new MonAn { MonAnId = 3, TenMon = "Bún bò Huế", Gia = 60000, MoTa = "Món bún nổi tiếng", HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 2, DiachiquanId = 3 },
+                new MonAn { MonAnId = 4, TenMon = "Phở", Gia = 50000, MoTa = "Món phở truyền thống", HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 3, DiachiquanId = 1 },
+                new MonAn { MonAnId = 5, TenMon = "Gà rán", Gia = 70000, MoTa = "Gà rán giòn tan", HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 2, DiachiquanId = 2 },
+                new MonAn { MonAnId = 6, TenMon = "Bánh xèo", Gia = 30000, MoTa = "Bánh xèo giòn", HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 1, ThanhPhanId = 1, DiachiquanId = 3 },
+                new MonAn { MonAnId = 7, TenMon = "Hủ tiếu", Gia = 45000, MoTa = "Hủ tiếu Nam Vang", HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 2, DiachiquanId = 1 },
+                new MonAn { MonAnId = 8, TenMon = "Sushi", Gia = 120000, MoTa = "Món sushi Nhật Bản", HinhAnh = "/Images2/istockphoto-1200064755-170667a.jpg", LoaiMonAnId = 2, ThanhPhanId = 3, DiachiquanId = 2 },
+                new MonAn { MonAnId = 9, TenMon = "Mì Ý", Gia = 80000, MoTa = "Mì Ý sốt cà chua", HinhAnh = "/Images2/z6035875873720_114730cc66faa67749315b417c790719.jpg", LoaiMonAnId = 3, ThanhPhanId = 1, DiachiquanId = 3 },
+                new MonAn { MonAnId = 10, TenMon = "Trà sữa", Gia = 25000, MoTa = "Trà sữa truyền thống", HinhAnh = "/Images2/z6035875881929_d785375a00c2dabf615d911288f4930a.jpg", LoaiMonAnId = 1,  ThanhPhanId = 2, DiachiquanId = 1 },
+                new MonAn { MonAnId = 11, TenMon = "Salad", Gia = 30000, MoTa = "Salad rau củ tươi ngon", HinhAnh = "/Images2/z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg", LoaiMonAnId = 1, ThanhPhanId = 3, DiachiquanId = 2 },
+                new MonAn { MonAnId = 12, TenMon = "Chè", Gia = 20000, MoTa = "Chè đậu xanh", HinhAnh = "/Images2/z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg", LoaiMonAnId = 1, ThanhPhanId = 1, DiachiquanId = 3 }
             );
 
             modelBuilder.Entity<Combo>().HasData(

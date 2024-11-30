@@ -55,6 +55,9 @@ namespace ASM_PH48831.Controllers
 
         public IActionResult Details(int id)
         {
+            var isLoggedIn = !string.IsNullOrEmpty(HttpContext.Session.GetString("TaiKhoan"));
+            ViewData["IsLoggedIn"] = isLoggedIn;
+
             var combo = _context.Combos
                 .Include(c => c.ComboChiTiets)
                 .ThenInclude(ct => ct.MonAn)

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ASM_PH48831.Migrations
 {
     /// <inheritdoc />
-    public partial class giohang : Migration
+    public partial class _5435345 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -362,25 +362,25 @@ namespace ASM_PH48831.Migrations
             migrationBuilder.InsertData(
                 table: "HoaDons",
                 columns: new[] { "HoaDonId", "NgayLap", "NguoiDungId", "TongTien", "TrangThaiId" },
-                values: new object[] { 1, new DateTime(2024, 11, 21, 16, 6, 27, 506, DateTimeKind.Local).AddTicks(8930), 2, 250000m, 1 });
+                values: new object[] { 1, new DateTime(2024, 11, 25, 9, 2, 10, 388, DateTimeKind.Local).AddTicks(5881), 2, 250000m, 1 });
 
             migrationBuilder.InsertData(
                 table: "MonAns",
                 columns: new[] { "MonAnId", "DiachiquanId", "Gia", "HinhAnh", "KichCoId", "LoaiMonAnId", "MoTa", "TenMon", "ThanhPhanId" },
                 values: new object[,]
                 {
-                    { 1, 1, 200000m, "/Images/hosting-fpt-removebg-preview.png", null, 3, "Pizza truyền thống", "Pizza", 1 },
-                    { 2, 2, 15000m, "/Images/img-1000x600-1.jpg", null, 1, "Bánh mì Việt Nam", "Bánh mì", 1 },
-                    { 3, 3, 60000m, "/Images/istockphoto-1200064755-170667a.jpg", null, 2, "Món bún nổi tiếng", "Bún bò Huế", 2 },
-                    { 4, 1, 50000m, "/Images/istockphoto-1200064755-170667a.jpg", null, 2, "Món phở truyền thống", "Phở", 3 },
-                    { 5, 2, 70000m, "/Images/istockphoto-1200064755-170667a.jpg", null, 2, "Gà rán giòn tan", "Gà rán", 2 },
-                    { 6, 3, 30000m, "/Images/istockphoto-1200064755-170667a.jpg", null, 1, "Bánh xèo giòn", "Bánh xèo", 1 },
-                    { 7, 1, 45000m, "/Images/istockphoto-1200064755-170667a.jpg", null, 2, "Hủ tiếu Nam Vang", "Hủ tiếu", 2 },
-                    { 8, 2, 120000m, "/Images/istockphoto-1200064755-170667a.jpg", null, 2, "Món sushi Nhật Bản", "Sushi", 3 },
-                    { 9, 3, 80000m, "/Images/z6035875873720_114730cc66faa67749315b417c790719.jpg", null, 3, "Mì Ý sốt cà chua", "Mì Ý", 1 },
-                    { 10, 1, 25000m, "/Images/z6035875881929_d785375a00c2dabf615d911288f4930a.jpg", null, 1, "Trà sữa truyền thống", "Trà sữa", 2 },
-                    { 11, 2, 30000m, "/Images/z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg", null, 1, "Salad rau củ tươi ngon", "Salad", 3 },
-                    { 12, 3, 20000m, "/Images/z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg", null, 1, "Chè đậu xanh", "Chè", 1 }
+                    { 1, 1, 200000m, "/Images2/hosting-fpt-removebg-preview.png", null, 3, "Pizza truyền thống", "Pizza", 1 },
+                    { 2, 2, 15000m, "/Images2/img-1000x600-1.jpg", null, 1, "Bánh mì Việt Nam", "Bánh mì", 1 },
+                    { 3, 3, 60000m, "/Images2/istockphoto-1200064755-170667a.jpg", null, 2, "Món bún nổi tiếng", "Bún bò Huế", 2 },
+                    { 4, 1, 50000m, "/Images2/istockphoto-1200064755-170667a.jpg", null, 2, "Món phở truyền thống", "Phở", 3 },
+                    { 5, 2, 70000m, "/Images2/istockphoto-1200064755-170667a.jpg", null, 2, "Gà rán giòn tan", "Gà rán", 2 },
+                    { 6, 3, 30000m, "/Images2/istockphoto-1200064755-170667a.jpg", null, 1, "Bánh xèo giòn", "Bánh xèo", 1 },
+                    { 7, 1, 45000m, "/Images2/istockphoto-1200064755-170667a.jpg", null, 2, "Hủ tiếu Nam Vang", "Hủ tiếu", 2 },
+                    { 8, 2, 120000m, "/Images2/istockphoto-1200064755-170667a.jpg", null, 2, "Món sushi Nhật Bản", "Sushi", 3 },
+                    { 9, 3, 80000m, "/Images2/z6035875873720_114730cc66faa67749315b417c790719.jpg", null, 3, "Mì Ý sốt cà chua", "Mì Ý", 1 },
+                    { 10, 1, 25000m, "/Images2/z6035875881929_d785375a00c2dabf615d911288f4930a.jpg", null, 1, "Trà sữa truyền thống", "Trà sữa", 2 },
+                    { 11, 2, 30000m, "/Images2/z6042058761907_810f9203bd7cd908f0e8c873ab0bbfd3.jpg", null, 1, "Salad rau củ tươi ngon", "Salad", 3 },
+                    { 12, 3, 20000m, "/Images2/z6042058820293_1b98c0f4626db7ed36546748783f2ca4.jpg", null, 1, "Chè đậu xanh", "Chè", 1 }
                 });
 
             migrationBuilder.InsertData(
